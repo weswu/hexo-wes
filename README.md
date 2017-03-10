@@ -8,8 +8,8 @@ Demo: [landscape](http://hexo.io/hexo-theme-landscape)
 
 ## 外观
 
-![电脑界面]()
-![手机界面]()
+![电脑界面](http://om1ci69wa.bkt.clouddn.com/hexo-theme-wes-pc.png)
+![手机界面](http://om1ci69wa.bkt.clouddn.com/hexo-theme-wes-mobile.png)
 
 ## 功能
 

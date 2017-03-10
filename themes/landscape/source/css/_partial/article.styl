@@ -144,6 +144,7 @@
   padding-top: line-height
   margin: 0 article-padding article-padding
   a
+    font-size: 0.85em
     color: color-grey
     text-decoration: none
     &:hover
@@ -160,8 +161,6 @@
 .article-comment-link
   float: right
   &:before
-    content: "\f075"
-    font-family: font-icon
     padding-right: 8px
 
 .article-share-link
@@ -169,8 +168,6 @@
   float: right
   margin-left: 20px
   &:before
-    content: "\f064"
-    font-family: font-icon
     padding-right: 6px
 
 #article-nav
@@ -264,7 +261,6 @@ $article-share-link
   text-shadow: 0 1px #fff
   &:before
     font-size: 20px
-    font-family: font-icon
     absolute-center(@font-size)
     text-align: center
   &:hover
@@ -272,32 +268,24 @@ $article-share-link
 
 .article-share-twitter
   @extend $article-share-link
-  &:before
-    content: "\f099"
   &:hover
     background: color-twitter
     text-shadow: 0 1px darken(color-twitter, 20%)
 
 .article-share-facebook
   @extend $article-share-link
-  &:before
-    content: "\f09a"
   &:hover
     background: color-facebook
     text-shadow: 0 1px darken(color-facebook, 20%)
 
 .article-share-pinterest
   @extend $article-share-link
-  &:before
-    content: "\f0d2"
   &:hover
     background: color-pinterest
     text-shadow: 0 1px darken(color-pinterest, 20%)
 
 .article-share-google
   @extend $article-share-link
-  &:before
-    content: "\f0d5"
   &:hover
     background: color-google
     text-shadow: 0 1px darken(color-google, 20%)
@@ -337,7 +325,6 @@ $article-gallery-ctrl
     opacity: 0.8
   &:before
     font-size: 30px
-    font-family: font-icon
     position: absolute
     top: 50%
     margin-top: @font-size * -0.5

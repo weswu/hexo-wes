@@ -13,7 +13,7 @@
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon iconfont icon-sort"></a>
+        <a id="main-nav-toggle" class="nav-icon iconfont icon-menu"></a>
         <% for (var i in theme.menu){ %>
           <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
         <% } %>
@@ -25,7 +25,11 @@
         <a id="nav-search-btn" class="nav-icon iconfont icon-search" title="<%= __('search') %>"></a>
       </nav>
       <div id="search-form-wrap">
-        <%- search_form({button: '&#xF002;'}) %>
+        <form action="//www.baidu.com/baidu" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+          <button type="submit" class="search-form-submit iconfont icon-search"></button>
+          <input type="hidden" name="sitesearch" value="<%- config.url.replace(/^https?:\/\//, '') %>">
+        </form>
       </div>
     </div>
   </div>

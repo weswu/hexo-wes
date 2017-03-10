@@ -1,13 +1,15 @@
 ---
 title: 用hexo写博客
 date: 2017-02-27 20:36:34
-tags: hexo
+categories: hexo
+header-img: https://hexo.io/hexo-theme-landscape/assets/wallpaper-2572384.jpg
+tags: [hexo,git]
 ---
 
   很早之前就想写一个博客，可是一直找不到好的tool。
   用Wordpress搭建过，感觉page不好搞，数据库也不是mysql，后来... 直到reship system。
   今天就用github pages搭建，github真是好东西，大家都知道。
-
+<!--more-->
 ### 一.hexo
 本地安装Node
 1.安装 hexo
@@ -78,4 +80,4 @@ deploy:
 $ npm install hexo-deployer-git --save
 $ hexo deploy          #生成.deploy_git文件
 ```
-
+End
