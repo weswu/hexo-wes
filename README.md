@@ -106,6 +106,6 @@ copyright:
  $ hexo d
  ```
  
-## 参数
+## 参考
  
  - [MarkDown](http://www.markdown.cn/)
