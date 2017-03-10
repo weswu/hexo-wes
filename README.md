@@ -20,7 +20,9 @@ Demo: [landscape](http://hexo.io/hexo-theme-landscape)
 
 ## 安装 
 
-  1. 电脑基本配置 node git
+  1. 电脑基本配置 
+  
+  node git
   
   2. 安装博客后台 
   
@@ -28,15 +30,15 @@ Demo: [landscape](http://hexo.io/hexo-theme-landscape)
   $ git clone https://github.com/weswu/hexo-wes
   ```
   
-  3. 安装必要插件
-
-  ```
+  3. 安装node_modles插件
+  
+  ```
   $ npm install
   ```
   
 # 主题配置
 
-# 配置文件 
+## 配置文件 
 
 `_config.yml` `theme/landscape/_config.yml`
 
@@ -76,6 +78,7 @@ duoshuo:
 ```  
 
 ### 版权: 
+
 ```
 copyright:
   record: false
@@ -103,7 +106,6 @@ copyright:
  $ hexo d
  ```
  
- ## 参数
+## 参数
  
  - [MarkDown](http://www.markdown.cn/)
- 
