@@ -13,6 +13,31 @@
   line-height: line-height
   font-size: 0.85em
 
+#top
+  position: fixed
+  bottom: 23px
+  right: 23px
+  cursor: pointer
+  z-index: 999
+  transition: all 0.5s ease 0s
+  display: block
+  opacity: 1
+  color: #4caf50
+  font-size: 0
+  &:hover
+    color: #4caf50
+    text-shadow: 1px 1px 1px #82ce85
+  &.reveal
+    font-size: 3em
+    &:active   
+      font-size: 3.5em
+      -webkit-transition: all 0.2s ease-out
+      -ms-transition: all 0.2s ease-out
+      -moz-transition: all 0.2s ease-out
+      -o-transition: all 0.2s ease-out
+      transition: all 0.2s ease-out  
+
+
 ::-webkit-scrollbar-track
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
   background-color: #F5F5F5

@@ -1,0 +1,13 @@
+<% if (post.categories && post.categories.length){ %>
+	<div class="timeline-filter-wrapper">
+		<header class="timeline-filter">
+			<ul>
+    <%- list_categories(post.categories, {
+      show_count: false,
+      style: 'none',
+      separator: '►'
+    }) %>
+    	</ul>
+    </header>
+  </div>
+<% } %>

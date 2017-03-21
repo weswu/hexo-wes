@@ -50,6 +50,10 @@ Demo: [landscape](http://hexo.io/hexo-theme-landscape)
 
 `keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs`
 
+### 滚动向上
+
+插件[material-scrolltop](https://github.com/bartholomej/material-scrolltop)
+
 ### 社交: 
 
 `facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus`

@@ -57,17 +57,17 @@
     padding: 10px 20px
     line-height: 1
     height: 2ex
-    padding: 7px 12px;
-    font-size: 0.9em;
-    font-weight: 600;
+    padding: 7px 12px
+    font-size: 0.9em
+    font-weight: 600
   a
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid #e1e4e8;
+    white-space: nowrap
+    vertical-align: middle
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    border: 1px solid #e1e4e8
     color: color-grey
     text-decoration: none
     &:hover
@@ -86,3 +86,149 @@
     font-weight: bold
   .space
     color: color-border
+
+.timeline
+  position: relative
+  width: 100%
+  margin: 0px auto
+  padding: 20px 0 100px 0
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 50.2%
+    height: 100%
+    width: 4px
+    background: #ccc
+
+.timeline-entry
+  position: relative
+  margin-top: -50px
+  &.first 
+    margin-top: 10px
+  &.odd
+    .timeline-description
+      margin-left: 60%
+      &:after
+        right: 100%
+        border-right-color: #eee
+      &:before
+        right: 100%;
+        border-right-color: #fff
+
+.timeline-icon
+  position: absolute
+  left: 50%
+  width: 40px
+  height: 40px
+  margin-left: -20px
+  border: 4px solid #ccc
+  border-radius: 50%;
+  box-shadow: 0px 1px 1px #999
+  text-align: center
+  vertical-align: middle
+  z-index: 2
+  i
+    color: #fff
+    font-size: 20px
+    line-height: 40px
+  &.green
+    background-color: #59BF51
+  &.red
+    background-color: #BF413E
+  &.grey
+    background-color: #999
+    line-height: 40px
+
+.timeline-description
+  box-sizing: border-box
+  position: relative
+  width: 40%
+  background-color: #fff
+  padding: 20px
+  box-shadow: 0px 1px 2px #999
+  display: inline-block
+  z-index: 1
+  .timestamp
+    font-style: italic
+    font-size: 80%
+    color: color-link
+  h2
+    font-size: 1.3em;
+    font-family: 'Roboto Slab', serif
+    line-height: 110%
+    margin: 5px 0
+    -webkit-margin-before: 5px
+    -webkit-margin-after: 5px
+    a
+      color: inherit
+    i
+      float: right
+      color: color-link
+      display: none  
+    &:hover
+      i
+        display: block
+  img
+    width: 100%
+    max-width: 150px
+    display: block
+  &:after    
+    top: 20px
+    height: 0
+    width: 0
+    content: ''
+    position: absolute
+    pointer-events: none
+    margin-top: -10px
+    z-index: 100
+    border:10px dashed transparent
+  &:before    
+    top: 21px
+    height: 0
+    width: 0
+    content: ''
+    position: absolute
+    pointer-events: none
+    margin-top: -9px
+    z-index: 101
+    border:8px dashed transparent
+
+@media screen and (min-width: 400px)
+  .timeline-entry
+    &.even 
+      .timeline-description
+        &:after
+          left: 100%
+          border-left-color: #eee
+        &:before
+          left: 100%
+          border-left-color: #fff
+
+
+@media screen and (max-width: 400px)
+  .timeline
+    &:before
+      left: 0
+
+  .timeline-icon
+    left: 0
+
+  .timeline-entry
+    margin-top: 25px
+    &.odd
+      .timeline-description
+        margin-left: 50px
+    &.even
+      .timeline-description
+        margin-left: 50px
+        &:after
+          right: 100%
+          border-right-color: #eee
+        &:before
+          right: 100%;
+          border-right-color: #fff
+
+  .timeline-description
+    width: 80%
+       
