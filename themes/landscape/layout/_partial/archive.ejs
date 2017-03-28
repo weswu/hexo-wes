@@ -1,4 +1,4 @@
-<% if (pagination == config.per_page){ %>
+<% if (pagination == config.index_generator.per_page){ %>
   <% page.posts.each(function(post){ %>
     <%- partial('article', {post: post, index: true}) %>
   <% }) %>
@@ -20,7 +20,6 @@
       <% } %>
       <% last = year; %>
       <section class="archives-wrap">
-        <%- partial('post/timeline', {post: post, even: i % 2 == 0, i}) %>
         <div class="timeline">
     <% } %>
     <% if (theme.archive_style == 'timelline'){ %>

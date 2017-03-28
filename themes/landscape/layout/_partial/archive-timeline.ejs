@@ -1,12 +1,10 @@
     <div class="timeline-entry <% if (even) {%>even<% } else { %>odd<% } %><% if (i == 0) {%> first<% } %>" data-category="<%- page.categories %>">
-		  <div class="timeline-icon green"></div>
+		  <div class="timeline-icon green"><%- i+1 %></div>
 			<div class="timeline-description">
         <span class="timestamp"><%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMMM D, YYYY'}) %></span>
         <%- partial('post/title', {class_name: 'archive-article-title'}) %>
         <div class="captioned-image image-right">
-          <a href="<%= post.link %>">
-            
-          </a>
+          <a href="<%= post.link %>"></a>
         </div>
 			</div>
 		</div>

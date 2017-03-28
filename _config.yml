@@ -69,8 +69,12 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 2
-arc_page: 1
+#主页每页显示文章数
+index_generator:
+    per_page: 3
+#archive分页每页显示文章数
+archive_generator:
+    per_page: 30
 pagination_dir: page
 
 # Extensions
