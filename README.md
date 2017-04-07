@@ -20,29 +20,29 @@ Demo: [landscape](http://hexo.io/hexo-theme-landscape)
 
 ## 安装 
 
-  1. 电脑基本配置 
-  
+  1. 电脑基本配置
+
   node git
-  
-  2. 安装博客后台 
-  
+
+  2. 安装博客后台
+
   ```
   $ git clone https://github.com/weswu/hexo-wes
   ```
-  
+
   3. 安装node_modles插件
-  
+
   ```
   $ npm install
   ```
-  
+
 # 主题配置
 
-## 配置文件 
+## 配置文件
 
 `_config.yml` `theme/landscape/_config.yml`
 
-### 图标: 
+### 图标:
 
 `favicon: /favicon.ico`
 
@@ -54,16 +54,16 @@ Demo: [landscape](http://hexo.io/hexo-theme-landscape)
 
 插件[material-scrolltop](https://github.com/bartholomej/material-scrolltop)
 
-### 社交: 
+### 社交:
 
 `facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus`
 
-### 个性域名: 
+### 个性域名:
 
-修改自己的二级域名 `source/CNAME` 
+修改自己的二级域名 `source/CNAME`
 
-博客目录存入,新建远程项目(有300M空间) `用户名.github.io` 
- 
+博客目录存入,新建远程项目(有300M空间) `用户名.github.io`
+
 ```
 deploy:
     type: git
@@ -73,7 +73,7 @@ deploy:
 
 ### 评论
 
-([多说](http://duoshuo.com/)): 
+([多说](http://duoshuo.com/)):
 
 ```
 duoshuo:
@@ -81,7 +81,7 @@ duoshuo:
   siteName: ueibo
 ```  
 
-### 版权: 
+### 版权:
 
 ```
 copyright:
@@ -93,23 +93,23 @@ copyright:
 ## 运行
 
  1. 初始化本地项目
- 
+
  ```
  $ hexo g
  ```
- 
+
  2. 打开本地页面 [localhost:400](htts://localhost:4000)
- 
+
  ```
  $ hexo s
  ```
- 
+
  3. 初始化git项目并自动 `push`
- 
+
  ```
  $ hexo d
  ```
- 
+
 ## 参考
- 
+
  - [MarkDown](http://www.markdown.cn/)

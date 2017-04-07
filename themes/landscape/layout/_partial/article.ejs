@@ -24,8 +24,8 @@
     </div>
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link iconfont icon-forward"><%= __('share') %></a>
-      <% if (post.comments && config.duoshuo.on){ %>
-        <a href="<%- post.permalink %>#comments" class="article-comment-link iconfont icon-mark"><%= __('comment') %></a>
+      <% if (index && post.comments && config.youyan.on){ %>
+        <a href="<%- post.permalink %>#uyan_frame" class="article-comment-link iconfont icon-mark"><%= __('comment') %></a>
       <% } %>
       <%- partial('post/tag') %>
     </footer>
@@ -35,19 +35,9 @@
   <% } %>
 </article>
 
-<% if (!index && post.comments && config.duoshuo.on){ %>
-<div class="duoshuo" id="comments">
-    <div class="ds-thread" data-thread-key="<%= page.path%>" data-title="<%= page.title%>" data-url="<%= url%>"></div>
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:"<%= theme.duoshuo.domain%>"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-    </script>
-</div>
+<% if (!index && post.comments && config.youyan.on){ %>
+  <!-- UY BEGIN -->
+  <div id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2129355"></script>
+  <!-- UY END -->
 <% } %>

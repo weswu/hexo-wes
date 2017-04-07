@@ -103,8 +103,8 @@
 
 .timeline-entry
   position: relative
-  margin-top: -35px
-  &.first 
+  margin-top: 0
+  &.first
     margin-top: 10px
   &.odd
     .timeline-description
@@ -167,7 +167,7 @@
     i
       float: right
       color: color-link
-      display: none  
+      display: none
     &:hover
       i
         display: block
@@ -175,7 +175,7 @@
     width: 100%
     max-width: 150px
     display: block
-  &:after    
+  &:after
     top: 20px
     height: 0
     width: 0
@@ -185,7 +185,7 @@
     margin-top: -10px
     z-index: 100
     border:10px dashed transparent
-  &:before    
+  &:before
     top: 21px
     height: 0
     width: 0
@@ -198,7 +198,7 @@
 
 @media screen and (min-width: 400px)
   .timeline-entry
-    &.even 
+    &.even
       .timeline-description
         &:after
           left: 100%
@@ -233,4 +233,3 @@
 
   .timeline-description
     width: 80%
-       
