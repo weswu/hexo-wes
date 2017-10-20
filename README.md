@@ -4,59 +4,72 @@
 
 一个简单博客的[hexo](https://hexo.io/themes/)主题
 
-Demo: [landscape](http://hexo.io/hexo-theme-landscape)
+Demo: [在线地址](http://www.weizai.party/)
 
 ## 外观
 
 ![电脑界面](http://om1ci69wa.bkt.clouddn.com/hexo-theme-wes-pc.png)
 ![手机界面](http://om1ci69wa.bkt.clouddn.com/hexo-theme-wes-mobile.png)
 
-## 功能
 
- - 简单快速开发
- - 自由评论
- - 分享功能
- - 个性页面,值得拥有
+## 安装和运行
 
-## 安装 
-
-  1. 电脑基本配置
-
-  node git
-
-  2. 安装博客后台
-
-  ```
-  $ git clone https://github.com/weswu/hexo-wes
-  ```
-
-  3. 安装node_modles插件
+  1. 安装依赖
 
   ```
   $ npm install
   ```
 
-# 主题配置
+  2. 启动本地服务器 [localhost:400](htts://localhost:4000)
 
-## 配置文件
+  ```
+  $ hexo s
+  ```
 
-`_config.yml` `theme/landscape/_config.yml`
+  3. 初始化本地项目
 
-### 图标:
+  ```
+  $ hexo g
+  ```
 
-`favicon: /favicon.ico`
+  4. 初始化远程项目
 
-### seo:
+  ```
+  $ hexo d
+  ```
 
-`keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs`
+## 目录
+
+<pre>
+.
+├── .deploy_git         // 网站代码
+├── public              // 网站代码
+├── scaffolds           // 模板
+├── source              // 博客文章
+├── themes/landscape    // 皮肤
+│   ├── languages       // 语言包
+│   ├── layout          // 各种组件
+│   ├── scripts         // js
+│   ├── source          // 静态文件
+│   ├── _config.yml     // 皮肤配置文件
+│   ├── Gruntfile.js    // 皮肤打包
+│   .
+├── _config.yml         // 配置文件
+├── .gitignore          // 忽略的文件
+├── .gitmodules         // 皮肤git项目地址
+├── db.json             // json数据
+├── gruntfile.js        // 打包
+├── package.json        // 项目配置文件
+├── README.md           // 说明
+</pre>
+
+
+
+## 皮肤主题
 
 ### 滚动向上
 
 插件[material-scrolltop](https://github.com/bartholomej/material-scrolltop)
-
-### 社交:
-
-`facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus`
 
 ### 个性域名:
 
@@ -71,45 +84,9 @@ deploy:
     branch: master
 ```
 
-### 评论
-
-([多说](http://duoshuo.com/)):
-
-```
-duoshuo:
-  enable: true
-  siteName: ueibo
-```  
-
-### 版权:
-
-```
-copyright:
-  record: false
-  hexo: true
-  laughing: true
-```
-
-## 运行
-
- 1. 初始化本地项目
-
- ```
- $ hexo g
- ```
-
- 2. 打开本地页面 [localhost:400](htts://localhost:4000)
-
- ```
- $ hexo s
- ```
-
- 3. 初始化git项目并自动 `push`
-
- ```
- $ hexo d
- ```
 
 ## 参考
 
- - [MarkDown](http://www.markdown.cn/)
+ - [写作-MarkDown](http://www.markdown.cn/)
+ - [皮肤-landscape](http://hexo.io/hexo-theme-landscape)
+ - [图片-七牛云](https://www.qiniu.com/)

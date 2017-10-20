@@ -1,9 +1,9 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-  Book: /book
-  Github: https://github.com/weswu
+  主页: /
+  归档: /archives
+  master: /book
+  Github: https://github.com/weswu/hexo-wes
 rss: /atom.xml
 
 # Content
@@ -36,5 +36,3 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
-
-  
