@@ -20,7 +20,7 @@ Demo: [在线地址](http://www.weizai.party/)
   $ npm install
   ```
 
-  2. 启动本地服务器 [localhost:400](htts://localhost:4000)
+  2. 启动本地服务器 [localhost:400](http://localhost:4000)
 
   ```
   $ hexo s

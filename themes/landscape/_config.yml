@@ -2,8 +2,7 @@
 menu:
   主页: /
   归档: /archives
-  master: /book
-  Github: https://github.com/weswu/hexo-wes
+  book: /book
 rss: /atom.xml
 
 # Content
