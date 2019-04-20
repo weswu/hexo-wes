@@ -1,8 +1,11 @@
 <%- partial('_partial/head') %>
 <body>
   <div id="container">
+    <div style="display:none">
+      <%= page.path.split('/')[0].split('.')[0] %> header.ejs文件不能用page 只能外面传参数？？？
+    </div>
     <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <%- partial('_partial/header', {currentPage: page.path.split('/')[0].split('.')[0]}, {cache: false}) %>
       <div class="outer wrapper">
         <section id="main"><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
