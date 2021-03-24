@@ -90,3 +90,5 @@ deploy:
  - [写作-MarkDown](http://www.markdown.cn/)
  - [皮肤-landscape](http://hexo.io/hexo-theme-landscape)
  - [图片-七牛云](https://www.qiniu.com/)
+
+ - [huxpro博客](https://github.com/Huxpro/huxpro.github.io)
