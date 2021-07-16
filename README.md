@@ -12,31 +12,61 @@ Demo: [在线地址](http://www.weizai.party/)
 ![手机界面](http://om1ci69wa.bkt.clouddn.com/hexo-theme-wes-mobile.png)
 
 
-## 安装和运行
+### 安装并运行
+```
+npm install -g hexo-cli
+hexo init website-hexo
+npm install
+```
+1. 本地服务器
+```
+hexo server         #运行本地服务器 localhost:4000
+hexo generate       #自动根据当前目录下文件,生成静态网页
+```
+2. 发布到github
+```
+npm install hexo-deployer-git --save
+hexo deploy    #生成.deploy_git文件
+```
 
-  1. 安装依赖
+#### 配置 _config.yml
+1. 自定义域名:把CNAME文件放到当前目录source文件下
+2. 更新到远程
+```
+deploy:  
+    type: git
+    repository: git@github.com:weswu/weswu.github.io.git
+    branch: master
+```
+3. 推广页面 
+```
+npm install hexo-generator-feed --save  # 安装插件
+npm install hexo-generator-baidu-sitemap --save
+```
+```
+plugins: 
+  hexo-generator-feed:
+  hexo-generator-baidu-sitemap:
+# sitemap
+baidusitemap:
+  path: baidusitemap.xm
+```
 
-  ```
-  $ npm install
-  ```
+	
+### 创建文章与页面
+```
+hexo new "文章名"
+hexo new page "book"
+hexo new page "book-1"
+menu:
+  Home: /
+  Archives: /archives
+  Book: /book
+  	
+tags: [hexo,git]
+```
 
-  2. 启动本地服务器 [localhost:400](http://localhost:4000)
 
-  ```
-  $ hexo s
-  ```
-
-  3. 初始化本地项目
-
-  ```
-  $ hexo g
-  ```
-
-  4. 初始化远程项目
-
-  ```
-  $ hexo d
-  ```
 
 ## 目录
 
@@ -71,18 +101,6 @@ Demo: [在线地址](http://www.weizai.party/)
 
 插件[material-scrolltop](https://github.com/bartholomej/material-scrolltop)
 
-### 个性域名:
-
-修改自己的二级域名 `source/CNAME`
-
-博客目录存入,新建远程项目(有300M空间) `用户名.github.io`
-
-```
-deploy:
-    type: git
-    repository: git@github.com:用户名/用户名.github.io.git
-    branch: master
-```
 
 
 ## 参考
